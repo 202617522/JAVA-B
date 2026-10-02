@@ -2,23 +2,9 @@
 // 에디터 여백에 있는 <icon src="AllIcons.Actions.Execute"/> 아이콘을 클릭하세요.
 void main() {
     Scanner keyboard = new Scanner(System.in);
-    int base;
-    int rectangular_area;
-    double radius;
-    double circle_area;
-    final double PI = 3.141592;
-    double area;
-
-    System.out.print("정사각형의 한 변의 길이 입력(예 5) :");
-    base = keyboard.nextInt();
-
-    rectangular_area = base * base;
-    radius = base / 2.0;
-    circle_area = PI * radius * radius;
-    area = rectangular_area - circle_area;
-
-    System.out.printf("한 변의 길이가 %,d cm인 정사각형의 면적 = %,d \u33A0\n", base, rectangular_area);
-    System.out.printf("이 정사각형 내부 원의 면적 : %,2f \u33A0\n", circle_area);
-    System.out.printf("구하려는 면적 : %,.2f\u33A0\n,", area);
-
+    System.out.print("섭씨 온도를 입력하세요 : ");
+    double c = keyboard.nextDouble();
+    double f = c * 9 / 5 + 32;
+    System.out.println("섭씨 " + c + "도는 화씨 " + f + "도입니다.");
 }
+
